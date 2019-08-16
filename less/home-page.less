@@ -13,6 +13,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    /*
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+   
+  }
+  */
    
     .text-content {
       width: 48%;
@@ -33,20 +42,47 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+     /* @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    */
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+     /* @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    */
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    
+    /*
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+  }
+  */
 
     img {
       border-radius: 10px;
@@ -59,6 +95,15 @@
     display: flex;
     justify-content: space-between;
 
+   /* @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+  }
+  */
+    
+
     // Calling mixin .btn
     .btn{
       display: flex;
@@ -68,6 +113,8 @@
       border: 1px solid;
       border-radius: 8px;
       padding: 5%;
+
+      
 
     }
   
