@@ -53,9 +53,24 @@
     display: flex;
     justify-content: space-between;
 
+    // Calling mixin .btn
+    .btn{
+      display: flex;
+      justify-content: center;
+      width: 48%;
+      .btn_maker(@eastern-blue, @white, 1.5rem);
+      border: 1px solid;
+      border-radius: 8px;
+      padding: 5%;
+
+    }
+
+    
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
   }
 }// home
+
