@@ -47,26 +47,26 @@
       padding-left: 1%;
       padding-right: 0;
 
-     /* @media @mobile {
+      @media @mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
     }
-    */
+    
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
 
-     /* @media @mobile {
+      @media @mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
     }
-    */
+    
     }
   }
 
@@ -75,14 +75,14 @@
     margin: 0 auto 30px;
 
     
-    /*
+    
     @media @mobile {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center;
   }
-  */
+  
 
     img {
       border-radius: 10px;
@@ -95,13 +95,13 @@
     display: flex;
     justify-content: space-between;
 
-   /* @media @mobile {
+    @media @mobile {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center;
   }
-  */
+  
     
 
     // Calling mixin .btn
@@ -109,12 +109,19 @@
       display: flex;
       justify-content: center;
       width: 48%;
-      .btn_maker(@eastern-blue, @white, 1.5rem);
+      //.btn_maker(@eastern-blue, @white, 1.5rem);
+      .btn_maker(teal, @white, 1.5rem);
       border: 1px solid;
       border-radius: 8px;
       padding: 5%;
 
-      
+      @media @mobile {
+        .btn_maker(@eastern-blue, @white, 1.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
 
     }
   
